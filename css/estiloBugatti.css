@@ -1,0 +1,131 @@
+/* Buscando a fonte nos arquivos */
+
+@font-face {
+
+    src: url('/fonte/lucida-console/lucon.ttf') format('truetype');
+    font-family: 'Noto Sans';
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Aplicando em tudo a fonte */
+
+* {
+
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+/* Config da classe à esquerda do header*/
+
+header .esquerda {
+
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+/* Config do header*/
+
+header {
+
+    justify-content: space-between;
+    background-color: #141414;
+    align-items: center;
+    display: flex;
+    padding: 12px;
+
+}
+
+/* Config das listas, itens da lista e os links no cabeçalho */
+
+header ul, li, a.direita {
+
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 5px;
+    color: #ffffff;
+    display: flex;
+
+}
+
+header a {
+
+    color: #ffffff;
+    font-size: 12px;
+
+}
+
+h3 {
+
+    padding: 30px 20px 10px 0px;
+    text-align: center;
+    font-size: 36px;
+
+}
+
+section {
+
+    padding: 30px 20px 10px 0px;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    display: flex;
+    width: 85%;
+
+}
+
+article {
+
+    padding: 30px 15px 30px 15px;
+    max-width: 550px;
+    flex-grow: 1; /* Faz o elemento ocupar o espaço que precisa ser preenchido */
+    width: 270px;
+
+}
+
+article img {
+
+    max-width: 600px;
+    height: 85%;
+    width: 100%;
+
+}
+
+img, p {
+
+    justify-content: center;
+    text-align: center;
+
+}
+
+@media (max-width: 670px) {
+
+    header.esquerda {
+        
+        font-size: 60px;
+
+    }
+
+    ul{
+        justify-items: center;
+    }
+
+    header ul, li {
+
+        font-size: 36px;
+        display: block;
+
+    }
+
+    a.direita{
+
+        background-color: #505050;
+        
+    }
+}
